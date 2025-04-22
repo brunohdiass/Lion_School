@@ -6,6 +6,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
@@ -89,7 +90,7 @@ fun TelaSecond() {
                 shape = RoundedCornerShape(16.dp),
                 singleLine = true,
                 colors = TextFieldDefaults.outlinedTextFieldColors(
-                    containerColor = Color(0xFFF0F0F0), // Fundo cinza claro
+                    containerColor = Color(0xFFDADADA), // Fundo cinza claro
                     focusedBorderColor = Color.Transparent,
                     unfocusedBorderColor = Color.Transparent
                 )
