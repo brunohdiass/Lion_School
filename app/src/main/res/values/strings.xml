@@ -5,10 +5,80 @@
     <string name="twitter">twitter</string>
     <string name="instagram">instagram</string>
     <string name="facebook">facebook</string>
-    <string name="lion_School">Lion School</string>
-    <string name="lion_nSchool">Lion\nSchool</string>
-
+    <string name="lion_School">Lion\nSchool</string>
     <string name="favorite_course">Find your favorite course</string>
     <string name="destinations">Get to your destination faster, study at the best vocational school in Brazil. Be the best version of yourself.</string>
     <string name="Get_Started">Get Started</string>
+    <string name="your_course">Find your course</string>
+    <string name="find_course">Find a student</string>
+    <string name="courses">Courses</string>
+    <string name="element_card1">DS</string>
+    <string name="element_card2">RDS</string>
+    <string name="element_card3">ELE</string>
+    <string name="todos">Todos</string>
+    <string name="cursando">Cursando</string>
+    <string name="finalizado">Finalizado</string>
+    <string name="name_course1">Desenvolvimento De Sistemas</string>
+    <string name="description_course1">Learn to develop web and mobile applications.</string>
+    <string name="time_course1">3 semesters</string>
+    <string name="name_course2">Redes de Computadores</string>
+    <string name="description_course2">Learn to design communication networks.</string>
+    <string name="time_course2">3 semesters</string>
+    <string name="name_course3">Eletroeletrônica</string>
+    <string name="description_course3">Learn to design communication networks.</string>
+    <string name="ds">DS</string>
+    <string name="studant">studant_list</string>
+    <string name="detalhes_do_aluno">Detalhes do aluno</string>
+    <string name="nome_aluno">Luana Oliveira Dias</string>
+    <string name="curso_aluno">001 - Técnico em Desenvolvimento de Sistemas</string>
+    <string name="desempenho">Desempenho</string>
+    <string name="siop">SIOP</string>
+    <string name="inri">INRI</string>
+    <string name="innu">INNU</string>
+    <string name="ha">HA</string>
+    <string name="sere">SERE</string>
+    <string name="caes">CAES</string>
+    <string name="status_concluido">Concluído</string>
+
+
+
+    <string name="year_2022">2022</string>
+    <string name="year_2023">2023</string>
+    <string name="year_2024">2024</string>
+
+
+
+
+
+
+    <string name="luana_oliveira_dias">Luana Oliveira Dias</string>
+    <string name="ra_20151001018">20151001018</string>
+    <string name="year_2022">2022</string>
+
+    <string name="carlos_eduardo_martins">Carlos Eduardo Martins</string>
+    <string name="ra_20141001022">20141001022</string>
+    <string name="year_2024">2024</string>
+
+    <string name="fernanda_souza_lima">Fernanda Souza Lima</string>
+    <string name="ra_20161002055">20161002055</string>
+    <string name="year_2022">2022</string>
+
+    <string name="joao_pedro_silveira">João Pedro Silveira</string>
+    <string name="ra_20181003033">20181003033</string>
+    <string name="year_2024">2024</string>
+
+    <string name="amanda_cristina_ramos">Amanda Cristina Ramos</string>
+    <string name="ra_20121004011">20121004011</string>
+    <string name="year_2022">2022</string>
+
+    <string name="bruno_henrique_souza">Bruno Henrique Souza</string>
+    <string name="ra_20111005099">20111005099</string>
+    <string name="year_2023">2023</string>
+
+    <string name="patricia_alves_barbosa">Patrícia Alves Barbosa</string>
+    <string name="ra_20121006045">20121006045</string>
+    <string name="year_2023">2023</string>
+
+
+
 </resources>

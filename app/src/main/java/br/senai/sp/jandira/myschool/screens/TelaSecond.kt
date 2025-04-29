@@ -6,7 +6,6 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.*
@@ -17,6 +16,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -37,11 +37,11 @@ fun TelaSecond() {
             horizontalAlignment = Alignment.Start,
             verticalArrangement = Arrangement.Top
         ) {
-            // LOGO + NOME ESCOLA
+
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(start = 16.dp),
+                    .padding(start = 35.dp),
             ) {
                 Image(
                     painter = painterResource(id = R.drawable.logo),
@@ -55,14 +55,14 @@ fun TelaSecond() {
 
                 Column(horizontalAlignment = Alignment.Start) {
                     Text(
-                        text = stringResource(R.string.lion_nSchool),
-                        fontSize = 16.sp,
-                        color = colorResource(R.color.cor_logo)
+                        text = stringResource(R.string.lion_School),
+                        fontSize = 20.sp,
+                        color = Color(0xFF2A2D8E),
+                        fontWeight = FontWeight.Bold
                     )
                 }
             }
 
-            // LINHA AMARELA
             Spacer(modifier = Modifier.height(16.dp))
             Card(
                 modifier = Modifier
@@ -72,8 +72,6 @@ fun TelaSecond() {
                 colors = CardDefaults.cardColors(colorResource(R.color.dark_yellow))
             ) {}
 
-            // BARRA DE BUSCA
-            // BARRA DE BUSCA
             Spacer(modifier = Modifier.height(24.dp))
             OutlinedTextField(
                 value = "",
@@ -97,7 +95,6 @@ fun TelaSecond() {
             )
 
 
-            // TÍTULO "Courses"
             Spacer(modifier = Modifier.height(24.dp))
             Row(
                 verticalAlignment = Alignment.CenterVertically,
@@ -110,13 +107,13 @@ fun TelaSecond() {
                 )
                 Spacer(modifier = Modifier.width(8.dp))
                 Text(
-                    text = "Courses",
-                    fontSize = 24.sp,
-                    color = Color(0xFF1C1C1C)
+                    text = stringResource(R.string.courses),
+                    modifier = Modifier.width(80.dp),
+                    fontSize = 20.sp,
+                    color = colorResource(R.color.cor_logo)
                 )
             }
 
-            // CURSO 1 - DS
             Spacer(modifier = Modifier.height(16.dp))
             Card(
                 shape = RoundedCornerShape(16.dp),
@@ -136,20 +133,28 @@ fun TelaSecond() {
                             .padding(end = 12.dp)
                     )
                     Column {
-                        Text(text = "DS", fontSize = 75.sp, color = Color(0xFFFFC700))
+                        Text(text = stringResource(R.string.element_card1),
+                            fontSize = 75.sp,
+                            color = Color(0xFFFFC700))
                         Spacer(modifier = Modifier.height(4.dp))
-                        Text(text = "Desenvolvimento de Sistemas", color = Color.White, fontSize = 16.sp)
-                        Text(text = "Learn to develop web and mobile applications.", color = Color.White.copy(alpha = 0.8f), fontSize = 12.sp)
+                        Text(text = stringResource(R.string.name_course1),
+                            color = Color.White,
+                            fontSize = 16.sp)
+                        Text(text = stringResource(R.string.description_course1),
+                            color = Color.White.copy(alpha = 0.8f),
+                            fontSize = 12.sp)
                         Spacer(modifier = Modifier.height(7.dp))
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Spacer(modifier = Modifier.width(4.dp))
-                            Text(text = "3 semesters", color = Color.White, fontSize = 12.sp)
+                            Text(text = stringResource(R.string.time_course1),
+                                color = Color.White,
+                                fontSize = 12.sp)
                         }
                     }
                 }
             }
 
-            // CURSO 2 - RDS
+
             Spacer(modifier = Modifier.height(12.dp))
             Card(
                 shape = RoundedCornerShape(16.dp),
@@ -158,7 +163,7 @@ fun TelaSecond() {
                     .padding(horizontal = 16.dp)
                     .fillMaxWidth()
                     .height(190.dp)
-                    .border(2.dp, Color(0xFFFFC700), shape = RoundedCornerShape(16.dp)) // Borda amarela
+                    .border(2.dp, Color(0xFFFFC700), shape = RoundedCornerShape(16.dp))
             ) {
                 Row(modifier = Modifier.padding(16.dp)) {
                     Image(
@@ -169,21 +174,26 @@ fun TelaSecond() {
                             .padding(end = 12.dp)
                     )
                     Column {
-                        Text(text = "RDS", fontSize = 75.sp, color = Color(0xFFFFC700))
+                        Text(text = stringResource(R.string.element_card2),
+                            fontSize = 75.sp,
+                            color = Color(0xFFFFC700))
                         Spacer(modifier = Modifier.height(4.dp))
-                        Text(text = "Redes de Computadores", color = Color.White, fontSize = 16.sp)
-                        Text(text = "Learn to design communication networks.", color = Color.White.copy(alpha = 0.8f), fontSize = 12.sp)
+                        Text(text = stringResource(R.string.name_course2),
+                            color = Color.White,
+                            fontSize = 16.sp)
+                        Text(text = stringResource(R.string.description_course2),
+                            color = Color.White.copy(alpha = 0.8f),
+                            fontSize = 12.sp)
                         Spacer(modifier = Modifier.height(12.dp))
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Spacer(modifier = Modifier.width(4.dp))
-                            Text(text = "3 semesters", color = Color.White, fontSize = 12.sp)
+                            Text(text = stringResource(R.string.time_course2),
+                                color = Color.White,
+                                fontSize = 12.sp)
                         }
                     }
                 }
             }
-
-            // CURSO 3 - ELE
-            Spacer(modifier = Modifier.height(12.dp))
             Card(
                 shape = RoundedCornerShape(16.dp),
                 colors = CardDefaults.cardColors(containerColor = Color(0xFF6464DC)),
@@ -191,7 +201,7 @@ fun TelaSecond() {
                     .padding(horizontal = 16.dp)
                     .fillMaxWidth()
                     .height(190.dp)
-                    .border(2.dp, Color(0xFFFFC700), shape = RoundedCornerShape(16.dp)) // Borda amarela
+                    .border(2.dp, Color(0xFFFFC700), shape = RoundedCornerShape(16.dp))
             ) {
                 Row(modifier = Modifier.padding(16.dp)) {
                     Image(
@@ -202,14 +212,22 @@ fun TelaSecond() {
                             .padding(end = 12.dp)
                     )
                     Column {
-                        Text(text = "ELE", fontSize = 75.sp, color = Color(0xFFFFC700))
+                        Text(text = stringResource(R.string.element_card3),
+                            fontSize = 75.sp,
+                            color = Color(0xFFFFC700))
                         Spacer(modifier = Modifier.height(4.dp))
-                        Text(text = "Eletroeletrônica", color = Color.White, fontSize = 16.sp)
-                        Text(text = "Learn to design communication networks.", color = Color.White.copy(alpha = 0.8f), fontSize = 12.sp)
+                        Text(text = stringResource(R.string.name_course3),
+                            color = Color.White,
+                            fontSize = 16.sp)
+                        Text(text = stringResource(R.string.description_course3),
+                            color = Color.White.copy(alpha = 0.8f),
+                            fontSize = 12.sp)
                         Spacer(modifier = Modifier.height(12.dp))
                         Row(verticalAlignment = Alignment.CenterVertically) {
                             Spacer(modifier = Modifier.width(4.dp))
-                            Text(text = "3 semesters", color = Color.White, fontSize = 12.sp)
+                            Text(text = stringResource(R.string.time_course2),
+                                color = Color.White,
+                                fontSize = 12.sp)
                         }
                     }
                 }

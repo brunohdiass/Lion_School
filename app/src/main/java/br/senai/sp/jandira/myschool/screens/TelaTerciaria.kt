@@ -23,6 +23,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -47,7 +48,7 @@ fun TelaTerciaria() {
             )
             Spacer(Modifier.width(8.dp))
             Text(
-                text = "Lion\nSchool",
+                text = stringResource(R.string.lion_School),
                 fontSize = 20.sp,
                 color = Color(0xFF2A2D8E),
                 fontWeight = FontWeight.Bold
@@ -60,7 +61,7 @@ fun TelaTerciaria() {
                 contentAlignment = Alignment.Center
             ) {
                 Text(
-                    text = "DS",
+                    text = stringResource(id = R.string.ds),
                     color = Color(0xFF2A2D8E),
                     fontSize = 18.sp,
                     fontWeight = FontWeight.Bold
@@ -101,20 +102,43 @@ fun TelaTerciaria() {
             horizontalArrangement = Arrangement.spacedBy(12.dp),
             modifier = Modifier.fillMaxWidth()
         ) {
-            listOf(
-                Triple("Todos", Color(0xFF2A2D8E), Color.White),
-                Triple("Cursando", Color(0xFFFFC700), Color(0xFF2A2D8E)),
-                Triple("Finalizado", Color(0xFFFFC700), Color(0xFF2A2D8E))
-            ).forEach { (label, bg, textColor) ->
-                Box(
-                    modifier = Modifier
-                        .background(bg, shape = RoundedCornerShape(32.dp))
-                        .padding(horizontal = 24.dp, vertical = 8.dp)
-                ) {
-                    Text(text = label, color = textColor)
-                }
+            // Botão "Todos"
+            Box(
+                modifier = Modifier
+                    .background(Color(0xFF2A2D8E), shape = RoundedCornerShape(32.dp))
+                    .padding(horizontal = 24.dp, vertical = 8.dp)
+            ) {
+                Text(
+                    text = stringResource(id = R.string.todos),
+                    color = Color.White
+                )
+            }
+
+            // Botão "Cursando"
+            Box(
+                modifier = Modifier
+                    .background(Color(0xFFFFC700), shape = RoundedCornerShape(32.dp))
+                    .padding(horizontal = 24.dp, vertical = 8.dp)
+            ) {
+                Text(
+                    text = stringResource(id = R.string.cursando),
+                    color = Color(0xFF2A2D8E)
+                )
+            }
+
+            // Botão "Finalizado"
+            Box(
+                modifier = Modifier
+                    .background(Color(0xFFFFC700), shape = RoundedCornerShape(32.dp))
+                    .padding(horizontal = 24.dp, vertical = 8.dp)
+            ) {
+                Text(
+                    text = stringResource(id = R.string.finalizado),
+                    color = Color(0xFF2A2D8E)
+                )
             }
         }
+
 
         Spacer(Modifier.height(16.dp))
 
@@ -131,7 +155,7 @@ fun TelaTerciaria() {
 
             Spacer(Modifier.width(8.dp))
             Text(
-                text = "Students List",
+                text = stringResource(id = R.string.studant),
                 fontSize = 24.sp,
                 color = Color(0xFF2A2D8E),
                 fontWeight = FontWeight.Bold
@@ -210,7 +234,7 @@ fun TelaTerciaria() {
                     painter = painterResource(id = R.drawable.avatar2),
                     contentDescription = null,
                     modifier = Modifier
-                        .padding(start = 20.dp)      // ← desloca para direita
+                        .padding(start = 20.dp)
                         .size(56.dp)
                         .clip(CircleShape)
                         .background(Color.Gray)
